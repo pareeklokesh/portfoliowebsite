@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/stylenew.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+
+    <div class="container-fluid vh-100">
+        <div class="row vh-100 align-items-center p-3">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="w-auto">
+                    <img src="assets/image/logo.png" width="200" alt="" />
+                </div>
+            </div>
+
+            <!-- Signup Email Screen -->
+
+            <div class="signupEmail" style="display: ;">
+            <div class="row justify-content-center mb-5 pt-4">
+                <div class="col-md-6">
+                    <input type="email" class="form-control w-100 form-input" placeholder="Enter your Email" id="">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h2 class="formTitle mb-5">Let’s Start with your Email</h2>
+                    <button class="btn formsubmitBtn emailBtn">Get OTP</button>
+                </div>
+            </div>
+        </div>
+        <!-- Signup Email Screen End! -->
+
+        <!-- Signup OTP Screen -->
+        <div class="signupOtp" style="display: none;">
+        <div class="row justify-content-center mb-3 pt-4">
+            <div class="col-md-6 d-flex justify-content-center" style="gap: 15px;">
+                <input class="form-input formOtp" maxlength="1" type="number" name="">
+                <input class="form-input formOtp" maxlength="1" type="number" name="">
+                <input class="form-input formOtp" maxlength="1" type="number" name="">
+                <input class="form-input formOtp" maxlength="1" type="number" name="">
+                <input class="form-input formOtp" maxlength="1" type="number" name="">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <p class="emailText"><i class="fa-solid fa-envelope"></i> name....@gmail.com</p>
+                <p class="formsubcontent">We have sent you one time password to your Email</p>
+                <p class="resendotp">Do not receive the OTP ? <a href="#">RESEND</a> <span>(1:52)</span></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <button class="btn backBtn me-4">Back</button> <button style="min-width: 178px;" class="btn formsubmitBtn otpverifyBtn">Verify</button>
+                </div>
+            </div>
+        </div>
+            <!-- Signup OTP Screen End! -->
+
+            <!-- Signup Personal Details -->
+
+            <div class="personalDetails" style="display:none;">
+                <div class="row justify-content-center pt-4">
+                <div class="col-md-6">
+                    <div class="mb-5">
+                        <h2 class="formTitle text-center">Personal Details</h2>
+                    </div>
+                    <div class="mb-5">
+                    <input type="text" class="form-control w-100 form-input" placeholder="Full Name" id="">
+                </div>
+                <div class="mb-5">
+                    <input type="text" class="form-control w-100 form-input" placeholder="LinkdIn URL " id="">
+                </div>
+                <div class="mb-5">
+                    <input type="text" class="form-control w-100 form-input" placeholder="Total Experience" id="">
+                </div>
+                </div>
+            </div>
+        
+        <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <button class="btn formsubmitBtn personalDetailsBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $(".emailBtn").click(function(){
+            $(".signupEmail").hide();
+            $(".signupOtp").show();
+        });
+        $(".otpverifyBtn").click(function(){
+            $(".signupOtp").hide();
+            $(".personalDetails").show();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -32,7 +32,7 @@ body {
 
 
 .side_bar .side_bar_top {
-    background: purple;
+    background: #222568;
     height: 250px;
     padding: 30px;
 }
@@ -76,12 +76,12 @@ body {
 
 .side_bar .side_bar_top .profile_info p a {
     text-decoration: none;
-    color: rgb(77, 77, 255);
+    color: #2AEA26;
     letter-spacing: 1.5px;
 }
 
 .side_bar .side_bar_bottom {
-    background: purple;
+    background: #222568;
     height: calc(100% - 250px);
     padding: 110px 0;
     padding-left: 15px;
@@ -138,7 +138,7 @@ body {
     left: 0px;
     width: 100%;
     height: 100%;
-    background: purple;
+    background: #222568;
     outline: none;
 }
 
@@ -151,7 +151,7 @@ body {
 
 }
 .navbar .btn:hover i {
-  color: #800080;
+  color: #222568;
 }
 
 
@@ -159,18 +159,19 @@ body {
 ========ImG Box==========
 ----------------------*/
 .box {
-    background: purple;
+    background: #222568;
 }
 
 .img_box {
     color: #fff;
-    background-image: radial-gradient(rgb(70, 2, 85), rgb(67, 0, 94));
+    background: rgba(255, 255, 255, 0.2);;
     border-radius: 16px;
     padding: 30px 30px 0 30px;
     margin: 0 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border: 1px solid #fff;
 }
 
 .img_box p {
@@ -254,7 +255,7 @@ body {
     top: 0;
     width: 50px;
     height: 100%;
-    background-color: purple;
+    background-color: #222568;
     color: #fff;
     border: none;
     border-radius: 0px 5px 5px 0px;
@@ -292,13 +293,13 @@ body {
     border-radius: 17px;
 }
 
-.container {
+.userDetails .container {
     position: relative;
     display: flex;
     gap: 15px;
 }
 
-.container .image img {
+.userDetails .container .image img {
     width: 140px;
     height: 140px;
     border-radius: 17px;
@@ -344,7 +345,7 @@ body {
 .container .content .about {
     display: flex;
     gap: 60px;
-    margin-top: 60px;
+    margin-top: 25px;
 }
 
 .container .content .about .lorem p {
@@ -354,8 +355,8 @@ body {
 }
 
 .desk_card .progress .progress-bar {
-    background-color: purple;
-    width: 30%;
+    background-color: #222568;
+    width: 30%;border-radius: 25px;
 }
 
 
@@ -365,7 +366,7 @@ body {
 
 .card {
     display: flex;
-    width: 300px;
+    width: 100%;
     height: 500px;
     padding: 0 13px;
     border-radius: 8px;
@@ -379,12 +380,14 @@ body {
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    background: conic-gradient(purple 3.6deg, #ededed 250deg);
+    background: conic-gradient(#222568 3.6deg, #ededed 250deg);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 0 10px 25px;
     text-align: center;
+    margin: 0px auto;
+margin-bottom: 10px;
 }
 
 .card .circular-progress::before {
@@ -400,13 +403,13 @@ body {
     position: relative;
     font-size: 40px;
     font-weight: 800px;
-    color: purple;
+    color: #222568;
 }
 
 .card .circular-progress .text {
     font-size: 30px;
     font-weight: 500px;
-    color: purple;
+    color: #222568;
 }
 
 
@@ -430,15 +433,17 @@ body {
     border-radius: 20px;
     padding: 5px 5px;
     margin: 10px 0 0 0;
-    background-color: purple;
+    background-color: #222568;
     color: #fff;
+    font-size: 14px;
+text-align: center;
 }
 
 .card .card-text .skills .light_color {
     background: plum;
-    color: purple;
+    color: #222568;
     font-weight: 600;
-    border: 1px solid purple;
+    border: 1px solid #222568;
     padding: 5px 10px;
 }
 
@@ -468,6 +473,11 @@ body {
     background: rgb(133, 133, 133);
     border-radius: 15px;
 }
+.userDetails .content .about .lorem p {
+  color: #000;
+  font-size: 13px;
+  line-height: normal;
+}
 
 
 /*-------------------
@@ -477,11 +487,10 @@ body {
 .submit_btn {
     padding: 10px 0;
     border: none;
-    margin-top: 15px;
 }
 
 .submit_btn button {
-    color: purple;
+    color: #222568;
     font-weight: 600;
     width: 170px;
     background-color: #fff;
@@ -496,5 +505,151 @@ body {
 
 .submit_btn button:hover {
     color: #fff;
-    background: purple;
+    background: #222568;
+}
+.sidebar-menu {
+  background: #222568 !important;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 25px;
+}
+.sidebar-menu:hover i {
+    color: #fff !important;
+}
+.side_bar {
+  background: #222568;
+}
+.side_bar {
+  position: fixed;
+  height: 100vh;
+  z-index: 999;
+  overflow: auto;
+}
+.scroller {
+  scrollbar-color: #fff #fff;
+  scrollbar-width: thin;
+}
+
+.scroller::-webkit-scrollbar {
+  background: white;
+  scrollbar-width: thin;height: 2px;
+    width: 4px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+.img_box {
+    margin-bottom: 30px;
+}
+.themecolor {
+    color: #222568;
+}
+
+
+@media (min-width: 992px) {
+    .sidebar-menu, .mb-searchicon {
+        display: none;
+}
+.main_container {
+    margin-left: 250px;
+}
+}
+
+@media (max-width: 991px) {
+    .navbar .search_bar {
+  display: none;
+}
+.side_bar {
+  position: fixed;
+  height: 100vh;
+  z-index: 999;
+  left: -250px;
+  transition: all .4s linear;
+  overflow: auto;
+}
+.main_container {
+    width: 100%;
+}
+.sidebarOpen {
+    left: 0;
+}
+.userDetails .container {
+  width: 100%;
+  max-width: 100%;
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+}
+.submit_btn button {
+    margin-bottom: 15px;
+}
+
+
+}
+
+@media (max-width: 766px) {
+    .userDetails .container {
+  flex-wrap: wrap;
+}
+.userDetails .container .content .about {
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.userDetails .container .content .about .lorem, .userDetails .container .content .about .lorem p {
+  width: 100%;
+  margin: 0;
+}
+.desk_card.userDetails {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container .content .social_links ul li a {
+  font-size: 0;
+  display: block;
+}
+.container .content .social_links ul li a i {
+  font-size: 14px;
+}
+.container .content .info p span {
+  font-size: 18px;
+}
+.main_container p {
+  font-size: 14px;
+}
+.userDetails .container .content .about .lorem p br {
+  display: none;
+}
+.card .card-text .skills ul li {
+  font-size: 12px;
+}
+.main_container {
+  padding: 15px;
+}
+.navbar .navbar_logo h4 {
+  font-size: 18px;
+}
+.navbar .badge button {
+  display: none;
+}
+.navbar .badge button.mb-searchicon, .navbar .badge button.sidebar-menu {
+    display: inline-block;
+    margin-left: 0;
+}
+.img_box {
+  margin-bottom: 30px;
+}
+
+}
+
+@media (max-width: 576px) {
+    .submit_btn button {
+  font-size: 14px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 15px;
+}
 }

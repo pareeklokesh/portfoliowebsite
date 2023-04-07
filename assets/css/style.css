@@ -33,8 +33,8 @@ body {
 
 .side_bar .side_bar_top {
     background: #222568;
-    height: 250px;
     padding: 30px;
+    padding-bottom: 10px;
 }
 
 .side_bar .side_bar_top .logo {
@@ -82,8 +82,7 @@ body {
 
 .side_bar .side_bar_bottom {
     background: #222568;
-    height: calc(100% - 250px);
-    padding: 110px 0;
+    padding: 0px 0;
     padding-left: 15px;
 }
 
@@ -521,7 +520,7 @@ text-align: center;
 }
 .side_bar {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   z-index: 999;
   overflow: auto;
 }

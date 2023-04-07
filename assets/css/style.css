@@ -152,6 +152,38 @@ body {
 .navbar .btn:hover i {
   color: #222568;
 }
+.side_bar .side_bar_bottom ul li .sub-menu li {
+  margin: 0;
+}
+.sub-menu {
+  padding-left: 35px;
+  padding-bottom: 10px;
+}
+.side_bar .side_bar_bottom ul li.droupdown-sidebar.active a {
+  border-bottom-left-radius: 0;
+}
+.side_bar .side_bar_bottom ul li .sub-menu {
+  background: #fff;
+  border-bottom-left-radius: 25px;
+}
+.side_bar .side_bar_bottom ul li .sub-menu li a {
+    background: transparent;border-radius: 0;
+    color: #000;
+}
+.side_bar .side_bar_bottom ul li .sub-menu a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.sub-menu {
+  transition: all .4s linear;
+  display: none;
+}
+.side_bar .side_bar_bottom ul li.active .sub-menu {
+    display: block;
+}
+
 
 
 /*---------------------
@@ -194,6 +226,11 @@ body {
     width: 150px;
     padding-top: 10px;
     align-self: flex-end;
+}
+.proHeader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 
@@ -308,7 +345,7 @@ body {
     display: flex;
 }
 
-.container .content .info p span {
+.container .content .info p span, .deskTitle {
     color: rgb(79, 0, 128);
     font-weight: 600;
     font-size: 24px;
@@ -546,6 +583,60 @@ text-align: center;
 }
 
 
+/* ------------------Resume--------------------- */
+
+.followBtn, .messagebtn {
+  background: #222568;
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 25px;
+  border:2px solid #222568 !important;
+}
+.messagebtn {
+    color: #222568;
+    background: #fff;
+}
+.followBtn:hovere {
+    border-color: #222568;
+    background: #fff;
+    color: #222568;
+}
+.messagebtn:hover {
+    color: #fff;
+    background: #222568;
+    border-color: #222568;
+}
+.editbtn {
+  color: #222568;
+  font-weight: 600;
+  font-size: 20px;
+}
+.seemore {
+    font-weight: 700;
+    text-decoration: none;
+}
+.projectDetails p {
+  font-size: 14px;
+}
+.projectDetails {
+  background: #D9D9D9;
+}
+.credential-btn {
+  background: #E8E5E5;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 18px;
+  padding: 5px 25px;
+}
+.side_bar .side_bar_bottom ul li .sub-menu li a.active, .side_bar .side_bar_bottom ul li .sub-menu li a:hover {
+  color: #222568;
+}
+
+
+
+
+
 @media (min-width: 992px) {
     .sidebar-menu, .mb-searchicon {
         display: none;
@@ -651,4 +742,15 @@ text-align: center;
   margin: 0;
   margin-bottom: 15px;
 }
+.editbtn {
+  font-size: 0;
+}
+.editbtn i {
+  font-size: 16px;
+}
+.desk_card {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 }

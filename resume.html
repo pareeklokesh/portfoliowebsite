@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!--------------------- 
+        ----------SIDEBAR------>
+        <div class="side_bar scroller">
+            <div class="side_bar_top">
+                <div class="logo">
+                    <img src="assets/image/logo.png" width="160" />
+                </div>
+                <div class="profile_pic">
+                    <img src="assets/image/Profile1.jpg" alt="Profile">
+                </div>
+                <div class="profile_info">
+                    <h3>Jan Doe</h3>
+                    <p>Senior Technical Recruiter <br>
+                        @Amazone <br>
+                        <i class="fa-solid fa-location-dot text-white"></i> <a href="#">New York, US</a></i>
+                    </p>
+                </div>
+            </div>
+            <div class="side_bar_bottom">
+                <ul>
+                    <li class="active droupdown-sidebar">
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                            <span class="item">Profile</span>
+                        </a>
+                        <ul class="sub-menu" id="profileDetails">
+                            <li>
+                                <a href="#resume">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#education">Education</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#certificates">Certificates</a>
+                            </li>
+                            <li>
+                                <a href="#experienceCompanies">Experience Companies</a>
+                            </li>
+                            <li>
+                                <a href="#recommendation">Recommendation</a>
+                            </li>
+                        </ul>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-regular fa-briefcase"></i></span>
+                            <span class="item">My Progress</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-regular fa-briefcase"></i></span>
+                            <span class="item">Match Analysts</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                            <span class="item">Settings</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                </ul>
+                <div class="box">
+                    <div class="img_box">
+                        <h6>Help Center</h6>
+                        <p>Visit Our Help Center</p>
+                        <button type="button">Start</button>
+                        <img src="assets/image/man-working-computer-vector-business-icon-man-working-pc-115379858-removebg-preview.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------
+        --------MAIN CONTAINER-------->
+
+        <div class="main_container">
+
+            <!------------------------
+            -----------Navbar ------->
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <h4>Application profile</h4>
+                </div>
+                <div class="search_bar">
+                    <form action="">
+                        <input type="text" name="" class="input" required>
+                        <button type="submit" class="button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="badge">
+                    <button class="btn position-relative mb-searchicon"><i class="fa fa-search"></i></button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span
+                            class="bg_red position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <img class="proHeader" src="assets/image/profile.png" />
+                    </button>
+                    <button type="button" class="btn position-relative sidebar-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- <div class="back">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Go Back</a>
+                <p>and</p>
+            </div> -->
+
+            <!------------------------------
+             --------Candidate-Profile------>
+
+             <div data-bs-spy="scroll" data-bs-target="#profileDetails" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+            <div class="desk_card userDetails" id="user-details">
+                <div class="container">
+                    <div class="image">
+                        <img src="assets/image/Profile1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <p> <span>John Fernandis</span> <br>
+                                Senior Software Engineer, Google<br>
+                                <i class="fas fa-map-marker-alt me-1 themecolor"></i>San Jose, USA
+                            </p>
+                            <div class="social_links">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-eye"></i> Resume</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about">
+                            <div class="lorem">
+                                <h6 class="d-block themecolor">About</h6>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                    Quisquam ratione natus,
+                                    necessitatibus veritatis molestias <br>
+                                    pariatur debitis voluptates.</p>
+                            </div>
+                            <div class="study">
+                                <p>Highest Education
+                                    <b class="d-block mt-2 mb-2">Master In science</b> 
+
+                                    <span class="d-block mb-2">Salary Range </span>
+
+                                    $120,000-140,000
+                                </p>
+                            </div>
+
+                            <div class="study">
+                                <p>Highest Education
+                                    <b class="d-block mt-2 mb-2">Master In science</b> 
+
+                                    <span class="d-block mb-2">Salary Range </span>
+
+                                    $120,000-140,000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex mb-3">
+                        <button class="btn followBtn rounded-pill me-3"><i class="fa-solid fa-plus"></i> follow</button>
+                        <button class="btn messagebtn rounded-pill"><i class="fa-solid fa-lock"></i> Message</button>
+                    </div>
+                    <h6>Candidate Shortlisted rate all applications</h6>
+                    <div class="progress rounded-pill">
+                        <div class="progress-bar"><strong>30 %</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------Resume--------->
+            
+            <div class="desk_card" id="resume">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">Resume</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-11">
+                                <h5>Document</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <img src="assets/image/resume.png" class="w-100" />
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <img src="assets/image/resume.png" class="w-100" />
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!---------About--------->
+            
+            <div class="desk_card" id="about">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">About</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="mb-1">Actively Looking for a Software Testing Job Role #QA  #Manual Testing</p>
+                                <p class="mb-1">Skills:</p>
+                                <p class="mb-1">• Knowledge of SDLC, STLC and Defect Life Cycle </p>
+                                <p class="mb-1">• Good understanding of Test Case writing, Test Execution, Defect Reporting and Tracking.</p>
+                                <p class="mb-1">• Knowledge of Functional Testing and Non Functional.....</p>
+        
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="w-auto">
+                                <a href="#" class="themecolor seemore">...see more</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!---------Education--------->
+            
+            <div class="desk_card" id="education">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">Education</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="w-auto">
+                                <img src="assets/image/education.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p>S S Jain Subodh Girls College, Jaipur<br>
+                                Bachelor of computer application, Computer Science<br>
+                                2017 - 2020</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="w-auto">
+                                <img src="assets/image/education1.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p>Manipal University Jaipur<br>
+                                    Master's of computer Application, Information Technology<br>
+                                    Oct 2021 - nov 2023</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!---------Project--------->
+            
+            <div class="desk_card" id="projects">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">Project</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-3">
+                            <div class="col-11">
+                                <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="w-100 projectDetails p-3">
+                                    <p class="mb-1">Project Title -</p>
+                                    <p class="mb-1">Start Date-</p>
+                                    <p class="mb-1">End Date-</p>
+                                    <p class="mb-1">URL-</p>
+                                    <p class="mb-1">Technologies -  mongodb</p> 
+                                    <p class="mb-1">,nodejs,express,reactjs</p>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="w-100 projectDetails p-3">
+                                    <p class="mb-1">Project Title -</p>
+                                    <p class="mb-1">Start Date-</p>
+                                    <p class="mb-1">End Date-</p>
+                                    <p class="mb-1">URL-</p>
+                                    <p class="mb-1">Technologies -  mongodb</p> 
+                                    <p class="mb-1">,nodejs,express,reactjs</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+            </div>
+
+            <!---------Certificate--------->
+            
+            <div class="desk_card" id="certificates">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">Certificate</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Add <i class="fa-solid fa-plus"></i></button>
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="w-auto">
+                                <img src="assets/image/certificate.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p class="mb-0">ISTQB  Software Testing Certificate </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="w-auto">
+                                <img src="assets/image/certificate1.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p class="mb-4">Digital Marketing Certificate</p>
+                                <button class="btn btn-secondary btn-lg rounded-pill credential-btn">Show Credential <i class="fa-solid fa-light fa-arrow-up-right-from-square"></i></button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!---------Experience--------->
+            
+            <div class="desk_card" id="experienceCompanies">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">Experience</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Add <i class="fa-solid fa-plus"></i></button>
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="w-auto">
+                                <img src="assets/image/mobzway.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p class="mb-0">Software Quality Assurance Analyst<br>
+                                    Mobzway Technologies · Full-time<br>
+                                    Jul 2022 - Present · 10 mos<br>
+                                    Rajasthan, India</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="w-auto">
+                                <img src="assets/image/intern.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p class="mb-4">Intern<br>
+                                    Success Ladder Technologies (SLT) Pvt. Ltd.<br>
+                                    Feb 2021 - Apr 2021 · 3 mos</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!---------Skill--------->
+            
+            <div class="desk_card">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">Skill</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Add <i class="fa-solid fa-plus"></i></button>
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="w-auto">
+                                <h5>Game Testing</h5>
+                            </div>
+                        </div>
+                            <div class="row align-items-center ">
+                            <div class="w-auto">
+                                <img src="assets/image/mobzway.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p class="mb-0">Software Quality Assurance Analyst at Mobzway Technologies </p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="w-auto">
+                                <button class="btn btn-secondary btn-lg rounded-pill credential-btn">Endorse</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mt-3">
+                            <div class="w-auto">
+                                <h5>SQL</h5>
+                            </div>
+                        </div>
+                            <div class="row align-items-center ">
+                            <div class="w-auto">
+                                <img src="assets/image/mobzway.png" alt="Education" />
+                            </div>
+                            <div class="w-auto">
+                                <p class="mb-0">Software Quality Assurance Analyst at Mobzway Technologies </p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="w-auto">
+                                <button class="btn btn-secondary btn-lg rounded-pill credential-btn">Endorse</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+            <!---------Recomendation--------->
+            
+            <div class="desk_card mb-5" id="recommendation">
+                <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="w-auto">
+                                <h2 class="deskTitle">Recomendation</h2>
+                            </div>
+                            <div class="w-auto">
+                                <button class="btn editbtn">Edit <i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="w-auto">
+                                <h5><strong class="themecolor me-3">Received</strong> <strong>Given</strong></h5>
+                            </div>
+                        </div>
+                        <hr>
+                            <div class="row">
+                            <div class="col-12 col-sm-1 mb-2 mb-sm-0">
+                                <img src="assets/image/profile.png" alt="Education" />
+                            </div>
+                            <div class="col-12 col-sm-11">
+                                <p class="">Anju Chauhan- 3rd<br>
+                                    Third degree connection<br>
+                                    Founder - DevelopersPark It Solutions<br>
+                                    November 6, 2008, Anuj worked with Brijmohan on the same team</p>
+
+                                    <p class="mb-0">birj is very strong skill in his domain , like facebook apps. good 
+                                    learner and accept challenge whatever may be. he is also a good
+                                    team member and always ready to help other in tech. issues </p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row" style="">
+                            <div class="col-12 col-sm-1 mb-2 mb-sm-0">
+                                <img src="assets/image/profile.png" alt="Education" />
+                            </div>
+                            <div class="col-12 col-sm-11">
+                                <p class="">Anju Chauhan- 3rd<br>
+                                Third degree connection<br>
+                                Founder - DevelopersPark It Solutions<br>
+                                November 6, 2008, Anuj worked with Brijmohan on the same team</p>
+
+                            <p class="mb-0">birj is very strong skill in his domain , like facebook apps. good 
+                            learner and accept challenge whatever may be. he is also a good
+                            team member and always ready to help other in tech. issues </p>
+                            </div>
+                        </div>
+                            
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(".sidebar-menu").click(function(){
+        $(".side_bar").toggleClass("sidebarOpen");
+    });
+</script>
+<script>
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#profileDetails'
+})
+
+</script>
+</body>
+
+</html>

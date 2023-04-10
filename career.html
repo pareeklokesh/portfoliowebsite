@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!--------------------- 
+        ----------SIDEBAR------>
+        <div class="side_bar scroller">
+            <div class="side_bar_top">
+                <div class="logo">
+                    <img src="assets/image/logo.png" width="160" />
+                </div>
+                <div class="profile_pic">
+                    <img src="assets/image/Profile1.jpg" alt="Profile">
+                </div>
+                <div class="profile_info">
+                    <h3>Jan Doe</h3>
+                    <p>Senior Technical Recruiter <br>
+                        @Amazone <br>
+                        <i class="fa-solid fa-location-dot text-white"></i> <a href="#">New York, US</a></i>
+                    </p>
+                </div>
+            </div>
+            <div class="side_bar_bottom">
+                <ul>
+                    <li class="droupdown-sidebar">
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                            <span class="item">Profile</span>
+                        </a>
+                        <ul class="sub-menu" id="profileDetails">
+                            <li>
+                                <a href="#resume">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#education">Education</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#certificates">Certificates</a>
+                            </li>
+                            <li>
+                                <a href="#experienceCompanies">Experience Companies</a>
+                            </li>
+                            <li>
+                                <a href="#recommendation">Recommendation</a>
+                            </li>
+                        </ul>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li class="active droupdown-sidebar">
+                        <span class="top_curve"></span>
+                        <a href="career.html">
+                            <span class="icon"><i class="fa-solid fa-regular fa-briefcase"></i></span>
+                            <span class="item">Career</span>
+                        </a>
+                        <ul class="sub-menu" id="profileDetails">
+                            <li>
+                                <a href="#resume">Self Assesment</a>
+                            </li>
+                            <li>
+                                <a href="#about">Select Test</a>
+                            </li>
+                            <li>
+                                <a href="#education">Review assesment</a>
+                            </li>
+                        </ul>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-regular fa-briefcase"></i></span>
+                            <span class="item">Match Analysts</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                            <span class="item">Settings</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                </ul>
+                <div class="box">
+                    <div class="img_box">
+                        <h6>Help Center</h6>
+                        <p>Visit Our Help Center</p>
+                        <button type="button">Start</button>
+                        <img src="assets/image/man-working-computer-vector-business-icon-man-working-pc-115379858-removebg-preview.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------
+        --------MAIN CONTAINER-------->
+
+        <div class="main_container">
+
+            <!------------------------
+            -----------Navbar ------->
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <h4>Application profile</h4>
+                </div>
+                <div class="search_bar">
+                    <form action="">
+                        <input type="text" name="" class="input" required>
+                        <button type="submit" class="button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="badge">
+                    <button class="btn position-relative mb-searchicon"><i class="fa fa-search"></i></button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span
+                            class="bg_red position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <img class="proHeader" src="assets/image/profile.png" />
+                    </button>
+                    <button type="button" class="btn position-relative sidebar-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- <div class="back">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Go Back</a>
+                <p>and</p>
+            </div> -->
+
+            <!------------------------------
+             --------Candidate-Profile------>
+
+             <div class="row justify-content-center mt-5 mb-5">
+                 <div class="col-12 col-sm-9">
+                     <h2 class="text-center block-title mb-5">Technical Details</h2>
+                     <div class="w-100 mb-3">
+                    <input type="text" class="form-control w-100 skill-input" placeholder="Skills(eg. Data Analysis)" id="">
+                    <span class="subinput">You can add 30 more skill</span>
+                </div>
+                <div class="w-100">
+                    <h5 class="blocksubt-title mb-3">Suggested skill based on your profile</h5>
+                </div>
+                <div class="w-100">
+                    <button class="btn skillBtn">Social Medial +</button>
+                    <button class="btn skillBtn">Visualization +</button>
+                    <button class="btn skillBtn">Machine Learning +</button>
+                    <button class="btn skillBtn">Maths +</button>
+                    <button class="btn skillBtn">Machine Learning +</button>
+                    <button class="btn skillBtn">Visualization +</button>
+                    <button class="btn skillBtn">Maths +</button>
+                    <button class="btn skillBtn">Maths +</button>
+                    <button class="btn skillBtn">Maths +</button>
+                    <button class="btn skillBtn">Machine Learning +</button>
+                    <button class="btn skillBtn">Machine Learning +</button>
+                </div>
+                 </div>
+             </div>
+
+        </div>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(".sidebar-menu").click(function(){
+        $(".side_bar").toggleClass("sidebarOpen");
+    });
+</script>
+<script>
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#profileDetails'
+});
+
+</script>
+</body>
+
+</html>

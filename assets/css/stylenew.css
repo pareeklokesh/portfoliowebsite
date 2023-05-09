@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
     font-family: 'montserrat', sans-serif;
@@ -18,12 +19,12 @@ body {
     font-family: 'Inter', sans-serif;
 }
 .form-input {
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   font-weight: 400;
-  border: 3px solid #FF5900 !important;
-  border-radius: 16px;
-  padding: 14px 15px;
+  border: 2px solid #FF5900 !important;
+  border-radius: 8px;
+  padding: 8px 15px;
   outline: none;
   box-shadow: none !important;
 }
@@ -32,19 +33,21 @@ body {
 }
 .formTitle {
   font-family: 'Inter', sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 42px;
   font-weight: 500;
-  color: #000;
+  color: #222568;
+font-family: 'Nunito', sans-serif;
+font-weight: 800;
 }
 .formsubmitBtn {
   background: #FF5900;
   color: #fff;
   border-radius: 25px;
   font-family: 'Inter', sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-  min-width: 218px;
+  font-size: 18px;
+font-weight: 400;
+padding: 4px 25px;
 }
 .formsubmitBtn:hover {
     background: #000;
@@ -80,14 +83,14 @@ input[type=number] {
   margin-bottom: 15px;
 }
 .resendotp {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   color: #000;
   margin-bottom: 25px;
 }
 .resendotp span {
-  font-size: 25px;
+  font-size: 18px;
 }
 .resendotp a {
   text-decoration: none;
@@ -95,4 +98,47 @@ input[type=number] {
 }
 .emailText i {
   color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: rgb(255, 255, 255);
+    background: url('../image/case-study-paywith-compliance-remote-work.jpg') no-repeat;
+    background-position: center;
+    background-color: rgba(0,0,0, 0.7);
+background-blend-mode: overlay;
+background-size: cover;
+}
+.signupFull {
+  max-width: 400px;
+  background: url('../image/bg-waves.svg') no-repeat;
+  background-position: bottom center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px 40px;
+  min-height: 500px;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+}
+.mainLogo {
+  margin-bottom: 0px !important;
+}
+
+}
+
+@media screen and (max-width: 390px) {
+  .formTitle {
+    font-size: 20px;
+  }
+  .resendotp {
+    font-size: 12px;
+  }
+  .formsubmitBtn {
+    font-size: 16px;
+  }
+  .mainLogo  img {
+    width: 100%;
+  }
 }

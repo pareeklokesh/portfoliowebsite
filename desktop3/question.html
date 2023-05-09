@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!--------------------- 
+        ----------SIDEBAR------>
+        <div class="side_bar scroller">
+            <div class="side_bar_top">
+                <div class="logo">
+                    <img src="../assets/image/logo.png" width="160" />
+                </div>
+                <div class="profile_pic">
+                    <img src="../assets/image/Profile1.jpg" alt="Profile">
+                </div>
+                <div class="profile_info">
+                    <h3>Jan Doe</h3>
+                    <p>Senior Technical Recruiter <br>
+                        @Amazone <br>
+                        <i class="fa-solid fa-location-dot text-white"></i> <a href="#">New York, US</a>
+                    </p>
+                </div>
+            </div>
+            <div class="side_bar_bottom">
+                <ul>
+                    <li class="droupdown-sidebar">
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                            <span class="item">Profile</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="resume.html">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Education</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Certificates</a>
+                            </li>
+                            <li>
+                                <a href="#">Experience Companies</a>
+                            </li>
+                            <li>
+                                <a href="#">Skill</a>
+                            </li>
+                            <li>
+                                <a href="#">Recommendation</a>
+                            </li>
+                        </ul>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-regular fa-briefcase"></i></span>
+                            <span class="item">My Progress</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-regular fa-briefcase"></i></span>
+                            <span class="item">Match Analysts</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                            <span class="item">Settings</span>
+                        </a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                </ul>
+                <div class="box">
+                    <div class="img_box">
+                        <h6>Help Center</h6>
+                        <p>Visit Our Help Center</p>
+                        <button type="button">Start</button>
+                        <img src="../assets/image/man-working-computer-vector-business-icon-man-working-pc-115379858-removebg-preview.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------
+        --------MAIN CONTAINER-------->
+
+        <div class="main_container">
+
+            <!------------------------
+            -----------Navbar ------->
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <h4>Application profile</h4>
+                </div>
+                <!-- <div class="search_bar">
+                    <form action="">
+                        <input type="text" name="" class="input" required>
+                        <button type="submit" class="button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div> -->
+                <div class="badge">
+                    <button class="btn position-relative mb-searchicon"  data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span
+                            class="bg_red position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <img class="proHeader" src="../assets/image/profile.png" />
+                    </button>
+                    <button type="button" class="btn position-relative sidebar-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+
+
+            <div class="container-fluid mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="block-title mb-5">Question Bank</h2>
+                        <div class="">
+                            <button class="btn btn-secondary questionbank-btn mb-2">Create  Question Bank</button>
+                            <button class="btn btn-secondary questionbank-btn mb-2">Show  Question Bank</button>
+                        </div>
+                        <hr>
+                        <div class="w-100 mb-4">
+                            <p class="text-black mb-3" style="font-size: 18px;">Select Category of MCQ Question</p>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="w-100 pb-3">
+                            <label class="text-black d-block mb-3">Write a Question</label>
+                            <input type="text" class="form-control" name="">
+                            <p class="text-uppercase mt-2">or</p>
+                            <label class="d-flex align-items-center text-nowrap">Upload file <input type="file" class="form-control ms-3" name="" placeholder="Choose File"></label>
+                        </div>
+                            <hr>
+                            <div class="w-100">
+                                <p>Write Options</p>
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-secondary">Option A</td>
+                                            <td class="text-secondary">Option B</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-secondary">Option C</td>
+                                            <td class="text-secondary">Option D</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="mb-3">Correct Answer</p>
+                                <input type="text" name="" placeholder="A|B|C|D" class="form-control">
+                                <button class="btn allBtn rounded-0 mt-3" style="background: var(--second-color)">Submit</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+<!-- Mobile Search Bar -->
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(0, 0, 0, .2);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 100%;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3 shadow-none" placeholder="Type search keyword" style="border-color: rgb(100, 0, 128) !important;color: #fff;">
+                        <button class="btn btn-primary px-4 shadow-none" style="background: rgb(100, 0, 128);border-color: rgb(100, 0, 128);"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Mobile Search Bar End! -->
+
+<!-- Edit Profile -->
+
+<div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="editProfileModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Profile -->
+
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+<script>
+    $(function() {
+  $(".sidebar-menu").on("click", function(e) {
+    $(".side_bar").toggleClass("sidebarOpen");
+    e.stopPropagation()
+  });
+  $(document).on("click", function(e) {
+    if ($(e.target).is(".side_bar") === false) {
+      $(".side_bar").removeClass("sidebarOpen");
+    }
+  });
+});
+</script>
+
+</body>
+
+</html>

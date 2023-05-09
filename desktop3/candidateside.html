@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div class="wrapper flex-wrap" style="height: auto;">
+
+        <!----------------------------
+        --------MAIN CONTAINER-------->
+
+        <div class="main_container ms-0 w-100">
+
+            <!------------------------
+            -----------Navbar ------->
+            <nav class="navbar navbarSecond position-relative border-0">
+                <div class="navbar_logo">
+                    <a href="#">
+                        <img src="../assets/image/logo.png" alt="Zo Skills" width="160" />
+                    </a>
+                </div>
+                <!-- <div class="search_bar">
+                    <form action="">
+                        <input type="text" name="" class="input" required>
+                        <button type="submit" class="button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div> -->
+                <div class="badge">
+                    <button class="btn position-relative mb-searchicon"  data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span
+                            class="bg_red position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <img class="proHeader" src="../assets/image/profile.png" />
+                    </button>
+                    <!-- <button type="button" class="btn position-relative sidebar-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button> -->
+                </div>
+            </nav>
+
+            <!-- <div class="back">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Go Back</a>
+                <p>and</p>
+            </div> -->
+
+            <!------------------------------
+             --------Candidate-Profile------>
+            
+   
+        </div>
+
+        <div class="container-fluid videochatdiv">
+            <div class="row position-relative overflow-hidden">
+                <div class="col-md-12 usermeetingcall">
+                    <img class="w-100" src="../assets/image/videochat.jpg">
+                </div>
+                <div class="position-absolute videochat-msg" id="videochat-msg">
+                    <div class="messages">
+                    <div>
+                      <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                      <p class="text-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                      <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                      <p class="text-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                  </div>
+                    <div class="sendchatmsg d-flex align-items-center">
+                    <input type="text" placeholder="Send a message">
+                    <button class="btn">
+                        <img src="../assets/image/send1.png" />
+                    </button>
+                  </div>
+                </div>
+
+                <div class="position-absolute videochat-msg" id="questionalluser">
+                    <div class="chat-question w-100">
+                        <h3 class="mb-4">Question Bank</h3>
+                        <p><strong> Question 1: Select the valid statement.</strong></p>
+                        <p>. char [] ch = new char(5) </p>
+                        <p>. char [] ch = new char(5) </p>
+                        <p>. char [] ch = new char(5) </p>
+                        <p>. char [] ch = new char(5) </p>
+                    </div>
+                    <div class="w-100 questionchatbtn">
+                        <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn">Prev</button>
+                                    <button class="btn">2</button>
+                                    <button class="btn">Next</button>
+                                </div>
+                    </div>
+                </div>
+
+            </div> 
+            <div class="row justify-content-between align-items-center pt-3 position-relative meetingbtn">
+                <div class="w-auto d-none d-md-block">
+                    <p class="m-0 teammeeting-text">Team meeting</p>
+                </div>
+                <div class="w-auto">
+                    <div class="d-flex justify-content-center" style="gap:10px;">
+                    <button class="btn rounded-pill videochatstartbtn"><i class="fa-solid fa-microphone"></i></button>
+                            <button class="btn rounded-pill videochatstartbtn"><i class="fa-solid fa-video"></i></button>
+                            <button class="btn rounded-pill videochatstartbtn"><i class="fa-solid fa-hand"></i></button>
+                            <button class="btn rounded-pill videochatstartbtn moremobilebtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                            <button class="btn rounded-pill videochatstartbtn closechatbtn"><i class="fa-solid fa-phone"></i></button>
+                        </div>
+                </div>
+                <div class="w-auto chatallusermb">
+                    <div class="chatalluser">
+                                <button class="btn"><i class="fa-solid fa-users text-white"></i>Add User</button>
+                                <button class="btn"><i class="fa-solid fa-user text-white"></i>Add User</button>
+                                <button class="btn chatvideocall"><i class="fa-brands fa-rocketchat text-white"></i>Chat</button>
+                                <button class="btn questionmodal-btn"><i class="fa-solid fa-question text-white"></i>Question</button>
+                            </div>
+                </div>
+            </div>       
+        </div>
+
+    </div>
+
+    
+
+<!-- Mobile Search Bar -->
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(0, 0, 0, .2);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 100%;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3 shadow-none" placeholder="Type search keyword" style="border-color: rgb(100, 0, 128) !important;color: #fff;">
+                        <button class="btn btn-primary px-4 shadow-none" style="background: rgb(100, 0, 128);border-color: rgb(100, 0, 128);"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Mobile Search Bar End! -->
+
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+<script>
+    $(".sidebar-menu").click(function(){
+        $(".side_bar").toggleClass("sidebarOpen");
+    });
+</script>
+
+<script>
+    $(".chatvideocall").click(function(){
+        $("#videochat-msg").toggleClass("videochat-msg-open");
+        $(".usermeetingcall").toggleClass("usermeetingcall-open");
+        $(".chatallusermb").removeClass("chatallusermb-open");
+    });
+    $(".questionmodal-btn").click(function(){
+        $("#questionalluser").toggleClass("videochat-msg-open");
+        $(".usermeetingcall").toggleClass("usermeetingcall-open");
+        $(".chatallusermb").removeClass("chatallusermb-open");
+    });
+    $(".moremobilebtn").click(function(){
+        $(".chatallusermb").toggleClass("chatallusermb-open");
+    });
+    
+</script>
+
+</body>
+
+</html>

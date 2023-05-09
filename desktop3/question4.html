@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/Fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!----------------------------
+        --------MAIN CONTAINER-------->
+
+        <div class="main_container ms-0 w-100">
+
+            <!------------------------
+            -----------Navbar ------->
+            <nav class="navbar navbarSecond position-relative border-0">
+                <div class="navbar_logo">
+                    <a href="#">
+                        <img src="../assets/image/logo.png" alt="Zo Skills" width="160" />
+                    </a>
+                </div>
+                <!-- <div class="search_bar">
+                    <form action="">
+                        <input type="text" name="" class="input" required>
+                        <button type="submit" class="button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div> -->
+                <div class="badge">
+                    <button class="btn position-relative mb-searchicon"  data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span
+                            class="bg_red position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            10
+                            <span class="visually-hidden"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <img class="proHeader" src="../assets/image/profile.png" />
+                    </button>
+                    <!-- <button type="button" class="btn position-relative sidebar-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button> -->
+                </div>
+            </nav>
+
+            <!-- <div class="back">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Go Back</a>
+                <p>and</p>
+            </div> -->
+
+            <!------------------------------
+             --------Candidate-Profile------>
+            <div class="container-fluid mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="../assets/image/Rectangle245.png" class="w-100">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="w-100 h-100 d-flex align-items-center flex-wrap" style="background: #d9d9d9;">
+                            <div class="w-100 p-3">
+                        <p class="text-center"><strong>Q1. What is tha full form of REPL ?</strong></p>
+                        <p class="text-center">Responce Read Earn Point Learn</p>
+                        <p class="text-center">Correct Answer:Read Eval Print Loop</p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-8">
+                        <h3 class="block-subtitle mb-3">Review Option</h3>
+                        <div class="w-100">
+                            <button class="btn allBtn rounded-2 ft-14 mb-2" style="background: var(--second-color);">Excellent</button>
+                            <button class="btn allBtn rounded-2 ft-14 mb-2" style="background: var(--second-color);">Satisfactory</button>
+                            <button class="btn allBtn rounded-2 ft-14 mb-2" style="background: var(--second-color);">Somehow OK</button>
+                            <button class="btn allBtn rounded-2 ft-14 mb-2" style="background: var(--second-color);">Poor</button>
+                        </div>
+                        <div class="w-100 position-relative mt-5">
+                            <label for="comments" class="comments-label position-absolute start-0 top-0">Comments</label>
+                            <textarea id="comments" class="form-control rounded-0 comments-area"></textarea>
+                        </div>
+                        <div class="w-100 mt-5">
+                            <button class="btn selectquestion-btn mb-2 ft-14">Preview</button>
+                            <button class="btn selectquestion-btn mb-2 ft-14">Save Review</button>
+                            <button class="btn selectquestion-btn mb-2 ft-14">Next Question</button>
+                            <button class="btn selectquestion-btn mb-2 ft-14">End Review</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    
+
+<!-- Mobile Search Bar -->
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(0, 0, 0, .2);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 100%;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3 shadow-none" placeholder="Type search keyword" style="border-color: rgb(100, 0, 128) !important;color: #fff;">
+                        <button class="btn btn-primary px-4 shadow-none" style="background: rgb(100, 0, 128);border-color: rgb(100, 0, 128);"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Mobile Search Bar End! -->
+
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+<script>
+    $(".sidebar-menu").click(function(){
+        $(".side_bar").toggleClass("sidebarOpen");
+    });
+</script>
+
+</body>
+
+</html>
